@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+/*
+html,body{ overflow:scroll; min-height:100%;}
+html{ overflow:-moz-scrollbars-vertical;}
+*/
+body {
+    background-color: #5F4B8B;
+    margin: 0px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#clock {
+    font-family: sans-serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+    font-family: "Roboto Mono";
+    color: #fff;
+    margin-bottom: .25em;
+}
+
+
+.weather-container {
+    width: 100%;
+    background-color: #272727;
+    padding: 1em;
+    border-radius: 3px;
+    font-family: "Roboto Mono";
+    color: #fff;
+    text-align: center;
+}
+.inline {
+    display: inline-block;
+}
+
+.bookmark-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+    margin: 1em 0em;
+}
+
+@media only screen and (max-width: 960px) {
+    .container {
+        height: auto;
+    }
+    #clock {
+        margin-top: 1em;
+    }
+    .container > .bookmark-container {
+        flex-direction: column;
+        width: 90%;
+    }
+    .bookmark-container > .bookmark-set {
+        width: auto;
+        margin: 1em 0em;
+    }
+}
+
+.bookmark-set{
+    padding: 1em;
+    background-color: #272727;
+    border-radius: 3px;
+    font-family: "Roboto Mono";
+    font-size: .85rem;
+    width: 80%;
+    height: 34em;
+    margin: .5em .5em;
+}
+.bookmark-inner-container {
+    /*overflow-y: scroll;*/
+    margin: 1.0em 0em;
+    height: 80%;
+    vertical-align: top;
+}
+.bookmark-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    margin: 0em 0em .35em 0em;
+}
+.bookmark {
+    font-size:1.0rem;
+    text-decoration: none;
+    color: #8c8c8b;
+    display:block;
+    margin: .5em 0em;
+}
+.bookmark:hover {
+    color: #fff;
+}
